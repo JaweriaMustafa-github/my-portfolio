@@ -1,0 +1,31 @@
+.about-section {
+    padding: 5rem 0; /* py-20 */
+    background-color: black; /* bg-black */
+    color: white; /* text-white */
+    display: flex;
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+  }
+  
+  .about-heading {
+    font-size: 3rem; /* text-5xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 2.5rem; /* mb-10 */
+  }
+  
+  .about-image {
+    border-radius: 9999px; /* rounded-full */
+    margin-bottom: 1.25rem; /* mb-5 */
+    transition: transform 0.3s, box-shadow 0.3s; /* transition-shadow duration-300 */
+  }
+  
+  .about-image:hover {
+    transform: scale(1.05); /* hover:scale-105 */
+  }
+  
+  .about-description {
+    max-width: 48rem; /* max-w-3xl */
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+    text-align: center; /* text-center */
+  }

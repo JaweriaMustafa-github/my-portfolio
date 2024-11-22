@@ -1,0 +1,83 @@
+.projects-section {
+    padding: 5rem 0; /* py-20 */
+    background-color: black; /* bg-black */
+    color: white; /* text-white */
+  }
+  
+  .projects-title {
+    font-size: 2.5rem; /* text-4xl */
+    text-align: center; /* text-center */
+    margin-bottom: 2.5rem; /* mb-10 */
+    font-weight: bold; /* font-bold */
+  }
+  
+  .projects-grid {
+    display: grid; /* grid */
+    grid-template-columns: 1fr; /* grid-cols-1 */
+    gap: 2.5rem; /* gap-10 */
+    padding: 0 1.25rem; /* px-5 */
+  }
+  
+  @media (min-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .projects-grid {
+      grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
+    }
+  }
+  
+  .project-card {
+    border: 1px solid #333; /* border */
+    padding: 1.25rem; /* p-5 */
+    background-color: #2d2d2d; /* bg-gray-800 */
+    border-radius: 0.75rem; /* rounded-lg */
+    transition: transform 0.3s; /* transition-transform duration-300 */
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* hover:scale-105 */
+  }
+  
+  .project-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: bold; /* font-bold */
+  }
+  
+  .project-image {
+    margin-top: 0.5rem; /* pt-2 */
+  }
+  
+  .project-description {
+    margin-top: 0.5rem; /* pt-2 */
+  }
+  
+  .project-link {
+    color: #06b6d4; /* text-cyan-500 */
+    margin-top: 0.5rem; /* mt-2 */
+    display: block; /* block */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .project-link:hover {
+    color: #ff0080; /* hover:text-pink-500 */
+  }
+  
+  .project-button {
+    background-color: #06b6d4; /* bg-cyan-500 */
+    color: white;
+    border-radius: 9999px; /* rounded-full */
+    width: 9rem; /* w-36 */
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .project-button:hover {
+    background-color: #ff0080; /* hover:bg-pink-500 */
+  }

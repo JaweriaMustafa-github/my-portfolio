@@ -1,0 +1,87 @@
+.hero-section {
+    min-height: 100vh; /* min-h-screen */
+    display: flex;
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    text-align: center; /* text-center */
+    background-color: black; /* bg-black */
+    color: white; /* text-white */
+    padding-top: 4rem; /* pt-16 */
+  }
+  
+  .hero-heading {
+    font-size: 3rem; /* text-5xl */
+    font-weight: 800; /* font-extrabold */
+    background: linear-gradient(to right, pink, cyan); /* text-gradient equivalent */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.75rem; /* pb-7 */
+  }
+  
+  .hero-image-container {
+    width: 16rem; /* w-64 */
+    height: 16rem; /* h-64 */
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* hover:transition-transform duration-300 */
+  }
+  
+  .hero-image-container:hover {
+    transform: scale(1.05); /* hover:scale-105 */
+  }
+  
+  .hero-image {
+    border-radius: 50%; /* rounded-full */
+  }
+  
+  .hero-subheading {
+    font-size: 3rem; /* text-5xl */
+    font-weight: 700; /* font-bold */
+  }
+  
+  .hero-typed-text {
+    font-size: 3rem; /* text-5xl */
+    font-weight: 700; /* font-bold */
+    color: #ec4899; /* text-pink-400 */
+  }
+  
+  .hero-description {
+    font-size: 1.25rem; /* text-xl */
+    margin-top: 1rem; /* mt-4 */
+  }
+  
+  .hero-download-button,
+  .hero-hire-button {
+    margin-top: 2.5rem; /* mt-10 */
+    padding: 0.5rem 1.5rem; /* px-6 py-2 */
+    border: 2px solid; /* border-2 */
+    border-radius: 9999px; /* rounded-full */
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .hero-download-button {
+    border-color: #ec4899; /* border-pink-500 */
+    background: transparent;
+    color: white;
+  }
+  
+  .hero-download-button:hover {
+    background-color: #ec4899; /* hover:bg-pink-500 */
+    color: black; /* hover:text-black */
+    transform: scale(1.05); /* hover:scale-105 */
+  }
+  
+  .hero-hire-button {
+    border-color: #06b6d4; /* border-cyan-500 */
+    background: transparent;
+    color: white;
+  }
+  
+  .hero-hire-button:hover {
+    background-color: #06b6d4; /* hover:bg-cyan-500 */
+    color: black; /* hover:text-black */
+    transform: scale(1.05); /* hover:scale-105 */
+  }

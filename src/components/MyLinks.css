@@ -1,0 +1,51 @@
+.my-links-section {
+    padding: 5rem 0; /* py-20 */
+    background-color: black; /* bg-black */
+    color: white; /* text-white */
+    text-align: center;
+  }
+  
+  .my-links-heading {
+    font-size: 2.5rem; /* text-4xl */
+    margin-bottom: 2.5rem; /* mb-10 */
+    font-weight: bold; /* font-bold */
+  }
+  
+  .my-links-image-container {
+    display: flex;
+    justify-content: center; /* justify-items-center */
+    margin-bottom: 2rem; /* Ensure spacing from other elements */
+  }
+  
+  .my-links-main-image {
+    border-radius: 50%; /* rounded-full */
+    transition: transform 0.3s ease-in-out; /* transition-shadow duration-300 */
+  }
+  
+  .my-links-main-image:hover {
+    transform: scale(1.05); /* hover:scale-105 */
+  }
+  
+  .my-links-list {
+    display: flex;
+    flex-wrap: wrap; /* flex-wrap */
+    justify-content: center; /* justify-center */
+    gap: 2.5rem; /* gap-10 */
+  }
+  
+  .my-links-item {
+    color: white; /* text-white */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* transition-transform duration-300 */
+  }
+  
+  .my-links-item:hover .my-links-icon {
+    transform: scale(1.1); /* hover:scale-110 */
+  }
+  
+  .my-links-icon {
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out; /* transition-transform duration-300 */
+  }
+  

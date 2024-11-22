@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem; /* p-5 */
+  background-color: rgba(0, 0, 0, 0.5); /* bg-black bg-opacity-50 */
+  z-index: 50; /* z-50 */
+  position: relative;
+}
+
+.navbar-logo {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 800; /* font-extrabold */
+  background: linear-gradient(90deg, pink, cyan);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-shortcut {
+  font-size: 1.25rem; /* text-xl */
+  font-family: serif; /* font-serif */
+  font-weight: 700; /* font-bold */
+  background: linear-gradient(90deg, pink, cyan);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+/* Hide JM logo on mobile and tablet screens */
+@media (max-width: 768px) {
+  .navbar-shortcut {
+    display: none; /* Hide "JM" logo on mobile and tablet screens */
+  }
+}
+
+.navbar-toggle-btn {
+  font-size: 1.875rem; /* text-3xl */
+  color: white;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+.navbar-toggle-btn:hover {
+  color: #ff0080; /* hover:text-pink-500 */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem; /* space-x-6 */
+  font-size: 1.125rem; /* text-lg */
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out; /* transition-transform duration-300 */
+}
+
+.navbar-link:hover {
+  color: #ff0080; /* hover:text-pink-400 */
+  transform: scale(1.05); /* hover:scale-105 */
+  font-weight: bold; /* hover:font-bold */
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 4rem; /* top-16 */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* bg-black bg-opacity-90 */
+  text-align: center;
+  display: none; /* hidden by default */
+  transition: transform 0.3s ease-in-out; /* transition-transform duration-300 */
+}
+
+.mobile-menu-open {
+  display: block;
+}
+
+.mobile-link {
+  display: block;
+  padding: 0.75rem 0; /* py-3 */
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out; /* transition-transform duration-300 */
+}
+
+.mobile-link:hover {
+  color: #ff0080; /* hover:text-pink-400 */
+  transform: scale(1.05); /* hover:scale-105 */
+  font-weight:;
+}
+
+/* Media Queries */
+
+/* Show hamburger menu and hide navbar links on mobile */
+@media (max-width: 767px) {
+  .navbar-toggle-btn {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .navbar-links {
+    display: none; /* Hide navbar links on mobile */
+  }
+
+  .navbar-shortcut {
+    display: none; /* Hide shortcut on mobile */
+  }
+}
+
+/* For tablet and larger screens */
+@media (min-width: 768px) {
+  .navbar-toggle-btn {
+    display: none; /* Hide hamburger icon on tablet and larger screens */
+  }
+
+  .navbar-links {
+    display: flex; /* Show navbar links on tablet and larger screens */
+  }
+
+  .mobile-menu {
+    display: none; /* Ensure mobile menu is hidden on larger screens */
+  }
+}
+
+/* For small screens */
+@media (max-width: 640px) {
+  .hidden-sm {
+    display: block;
+  }
+}
