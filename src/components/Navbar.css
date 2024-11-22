@@ -90,7 +90,7 @@
 .mobile-link:hover {
   color: #ff0080; /* hover:text-pink-400 */
   transform: scale(1.05); /* hover:scale-105 */
-  font-weight:;
+  font-weight:bold;
 }
 
 /* Media Queries */
