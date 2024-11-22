@@ -24,6 +24,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  font-weight: bold;
 }
 
 /* Hide JM logo on mobile and tablet screens */
