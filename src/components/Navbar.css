@@ -17,14 +17,13 @@
 }
 
 .navbar-shortcut {
-  font-size: 1.25rem; /* text-xl */
+  font-size: 2rem; /* text-xl */
   font-family: serif; /* font-serif */
   font-weight: 700; /* font-bold */
   background: linear-gradient(90deg, pink, cyan);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-weight: bold;
 }
 
 /* Hide JM logo on mobile and tablet screens */
